@@ -28,7 +28,8 @@
 
       dd {
         margin: 0;
-        padding-left: 1em;
+        padding: 3px 6px;
+        /*padding-left: 1em;*/
       }
     
       dt:nth-child(4n+1),
@@ -314,6 +315,61 @@
             le traitement par défaut. --&gt;
 
         </pre>
+      </div>
+
+      <div>
+        <h2>Tableau</h2>
+        <dl>
+          <dt><code>&lt;table&gt;</code></dt>
+          <dd>Un tableau.</dd>
+          <dt><code>&lt;thead&gt;</code></dt>
+          <dd>En-tête d'un tableau.</dd>
+          <dt><code>&lt;tbody&gt;</code></dt>
+          <dd>Corps d'un tableau.</dd>
+          <dt><code>&lt;tfoot&gt;</code></dt>
+          <dd>Pied d'un tableau.</dd>
+          <dt><code>&lt;th&gt;</code></dt>
+          <dd>En-tête d'une ligne ou d'une colonne.</dd>
+          <dt><code>&lt;tr&gt;</code></dt>
+          <dd>Ligne d'un tableau.</dd>
+          <dt><code>&lt;th&gt;</code></dt>
+          <dd>Cellule d'en-tête d'une ligne ou d'une colonne.</dd>
+          <dt><code>&lt;td&gt;</code></dt>
+          <dd>Une cellule.</dd>
+          <dt><code>@colspan</code></dt>
+          <dd>Nombre de colonnes sur lesquelles s'étend la cellule.</dd>
+          <dt><code>@rowspan</code></dt>
+          <dd>Nombre de lignes sur lesquelles s'étend la cellule.</dd>
+        </dl>
+        <pre>
+            &lt;table&gt;
+              &lt;thead&gt;
+                  &lt;tr&gt;
+                      &lt;th&gt;Achat boulangerie&lt;/th&gt;
+                      &lt;th&gt;Prix&lt;/th&gt;
+                  &lt;/tr&gt;
+              &lt;/thead&gt;
+              &lt;tbody&gt;
+                  &lt;tr&gt;
+                    &lt;th&gt;Baguette&lt;/td&gt;
+                    &lt;td rowspan="2"&gt;1€&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;th&gt;Croissant&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;th&gt;Pain de campagne&lt;/td&gt;
+                    &lt;td&gt;2€&lt;/td&gt;
+                  &lt;/tr&gt;
+              &lt;/tbody&gt;
+              &lt;tfoot&gt;
+                  &lt;tr&gt;
+                    &lt;th&gt;total&lt;/td&gt;
+                    &lt;td&gt;4€&lt;/td&gt;
+                  &lt;/tr&gt;
+              &lt;/tfoot&gt;
+            &lt;/table&gt;
+          </pre>
       </div>
     </article>
   </body>
